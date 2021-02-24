@@ -15,11 +15,6 @@ rocket_image = rocket_image.resize((50, 50), Image.ANTIALIAS)
 rocket_image = ImageTk.PhotoImage(rocket_image)
 rocket = tkinter.Label(image = rocket_image)
 
-def key_pressed(event):
-	event.char
-
-window.bind("<Key>", key_pressed)
-
 def loop():
 	if window.state() != "normal":
 		return
